@@ -69,7 +69,8 @@
 } */
 
 .navbar .navbar-brand {
-    margin-left: 3.5rem !important;
+    padding: 15px;
+    margin-left: 3.5rem;
 }
 
 .navbar .dropdown-toggle::after {
@@ -102,7 +103,67 @@
     transition: .5s;
 }
 
+/* Desktop mặc định (giữ nguyên) */
+.navbar-logo {
+    width: 100px;
+    height: auto;
+}
+
+.navbar-toggler {
+    border: 2px solid red !important;
+}
+
+.container .about-img {
+    width: 75%;
+}
+
+.team-img .img-collection-detail {
+    width: auto;
+    height: 400px;
+}
+
+.team-item .img-collection-detail .img-fluid{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Khi màn hình nhỏ hơn hoặc bằng 576px (mobile) */
+@media (max-width: 576px) {
+    .navbar .navbar-brand {
+        margin-left: 0.1rem;
+    }
+    .navbar-logo {
+        width: 50px; /* Giảm kích thước xuống */
+    }
+
+    .container .about-img {
+        margin: 0 auto;
+        height: auto;
+        width: 800px;
+    }
+
+    .team-item .img-collection-detail .img-fluid{
+        height: 400px;
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    .contact-map{
+        margin-top: 15px;
+    }
+}
+
+
+
+
 @media (max-width: 991.98px) {
+
+    /* .navbar-brand img{
+        width: 50px;
+        height: auto;
+    } */
+
     .navbar .navbar-nav .nav-link,
     .navbar.shadow-sm .navbar-nav .nav-link {
         margin-right: 0;
@@ -116,6 +177,13 @@
 }
 
 @media (min-width: 992px) {
+
+    /* .navbar-brand img{
+        width: 50px;
+        height: auto;
+    } */
+
+
     .navbar.shadow-sm .navbar-nav .nav-link {
         padding: 20px 0;
     }
@@ -210,10 +278,10 @@
     height: 400px;
 }
 
-.team-img .img-fluid {
+/* .team-img .img-fluid {
     height: 400px;
     width: 400px;
-}
+} */
 
 .team-img .team-social .btn a{
     padding: 20px;
