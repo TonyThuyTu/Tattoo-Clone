@@ -14,7 +14,7 @@
     z-index: 99;
 }
 
-
+ 
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -128,6 +128,12 @@
     border-radius: 10px;
 }
 
+.responsive-img {
+    width: auto;
+    height: 500px;
+    object-fit: cover; /* Đảm bảo ảnh được cắt và hiển thị đầy đủ */
+}
+
 /* Khi màn hình nhỏ hơn hoặc bằng 576px (mobile) */
 @media (max-width: 576px) {
     .navbar .navbar-brand {
@@ -152,6 +158,11 @@
     .contact-map{
         margin-top: 15px;
     }
+
+    .carosel-inner .carousel-item .img-fluid-product-detail{
+        height: 400px;
+        width: 400px;
+    }    
 }
 
 
